@@ -7,9 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 
 @WebServlet("/jlf")
@@ -24,6 +21,7 @@ public class HelloServlet extends HttpServlet {
         int a=5;
         int b=10;
         int c=a+b;
+        
         resp.getOutputStream().print(c);
     }
 }
